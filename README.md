@@ -19,7 +19,7 @@ Set up for and execution of script
 
 On a computer with R installed, perform the following steps.
 
-1. Download original data (zip file)
+1. Download original data (zip file)  
      https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. Unzip the file to a directory named "data" that is at the same level where the script
    is (or will be placed)
@@ -36,11 +36,11 @@ On a computer with R installed, perform the following steps.
 		  - subject_train.txt
 		  - X_train.txt
 		  - y_train.txt
-5. In R:
-  a. Install the R packages dplyr and reshape2, if not already installed
-  b. set the working directory to the location of the script and the data directory
-  c. source the script (run_analysis.R)
-  d. execute the script: run_analysis()
+5. In R:  
+     a. install the R packages dplyr and reshape2, if not already installed  
+     b. set the working directory to the location of the script and the data directory  
+     c. source the script (run_analysis.R)  
+     d. execute the script: run_analysis()  
    
  The script generates the tidy_data2.txt file in current working directory.
 	    
