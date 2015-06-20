@@ -53,7 +53,7 @@ Inside run_analysis.R
 This section details steps taken within run_analysis.R to achieve the 
 course project's five steps. 
 
-The five steps specified for the course project were to create a script called run_analysis.R that does the following:  
+The course project was to create a script called run_analysis.R that did the following five steps:  
 
 1. Merges the training and the test sets to create one data set.  
 2. Extracts only the measurements on the mean and standard deviation for each measurement.  
