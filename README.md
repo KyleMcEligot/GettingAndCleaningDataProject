@@ -25,23 +25,22 @@ On a computer with R installed, perform the following steps.
    is (or will be placed)
 3. Download the run_analysis.R script 
 4. Ensure the directory from which the script will be executed contains:
-      run_analysis.R
-	  data/
-	    features.txt
-		test/
-		  subject_test.txt
-		  X_test.txt
-		  y_test.txt
-		train/
-		  subject_train.txt
-		  X_train.txt
-		  y_train.txt
+      - run_analysis.R
+	  - data/
+	    - features.txt
+		- test/
+		  - subject_test.txt
+		  - X_test.txt
+		  - y_test.txt
+		- train/
+		  - subject_train.txt
+		  - X_train.txt
+		  - y_train.txt
 5. In R:
-   a. Install the R packages dplyr and reshape2, if not already installed
-   b. set the working directory to the location of the script 
-      and the data directory
-   c. source the script (run_analysis.R)
-   d. execute the script: run_analysis()
+  a. Install the R packages dplyr and reshape2, if not already installed
+  b. set the working directory to the location of the script and the data directory
+  c. source the script (run_analysis.R)
+  d. execute the script: run_analysis()
    
  The script generates the tidy_data2.txt file in current working directory.
 	    
