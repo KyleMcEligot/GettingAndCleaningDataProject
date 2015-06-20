@@ -43,4 +43,40 @@ On a computer with R installed, perform the following steps.
      d. execute the script: run_analysis()  
    
  The script generates the tidy_data2.txt file in current working directory.
-	    
+ This file can be read in with the following R code:
+    read.table("tidy_data2.txt", header = TRUE)
+ 
+
+Inside run_analysis.R
+=====================
+
+This section details steps taken within run_analysis.R to achieve the 
+course project's five steps. 
+  The instructions for this progect are below:
+    You should create one R script called run_analysis.R that does the following:
+        1. Merges the training and the test sets to create one data set.
+        2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+        3. Uses descriptive activity names to name the activities in the data set
+        4. Appropriately labels the data set with descriptive variable names. 
+        5. From the data set in step 4, creates a second, independent tidy data set with the average of each 
+           variable for each activity and each subject.
+		   
+The flow of run_analysis.R is as follows:
+  - read in all the necessary data files:
+  	    - features.txt
+		- subject_test.txt
+		- X_test.txt
+		- y_test.txt
+		- subject_train.txt
+		- X_train.txt
+		- y_train.txt
+  - add subject data (from subject_test.txt and subject_train.txt) and activity data(from y_test.txt and y_train.txt) as the first two columns with the test and training data sets (X_test and X_train)
+  - combine the test and training data sets (with subject and activity included) into one data set
+  - determine from features.txt which columns contain mean and standard deviation measurements
+  - extract those columns from the data set 
+  - using the activity lables from activity_labels.txt, change the values in the activity column from numbers to descriptive activity names
+  - add descriptive variable names based on features.txt 
+  - transform the data into long format
+  - group the data by "subject, activity, variable" and calculate the mean
+  - write the data out to tidy_data2.txt
+  
