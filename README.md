@@ -43,7 +43,7 @@ On a computer with R installed, perform the following steps.
      d. execute the script: run_analysis()  
    
  The script generates the tidy_data2.txt file in current working directory.
- This file can be read in with the following R code:
+ This file can be read in with the following R code:  
     read.table("tidy_data2.txt", header = TRUE)
  
 
@@ -51,14 +51,14 @@ Inside run_analysis.R
 =====================
 
 This section details steps taken within run_analysis.R to achieve the 
-course project's five steps.  
-  The instructions for this progect are below:  
-    You should create one R script called run_analysis.R that does the following:  
-        1. Merges the training and the test sets to create one data set.  
-        2. Extracts only the measurements on the mean and standard deviation for each measurement.  
-        3. Uses descriptive activity names to name the activities in the data set  
-        4. Appropriately labels the data set with descriptive variable names.  
-        5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+course project's five steps. 
+
+The five steps specified for the course project were to create a script called run_analysis.R that does the following:  
+1. Merges the training and the test sets to create one data set.  
+2. Extracts only the measurements on the mean and standard deviation for each measurement.  
+3. Uses descriptive activity names to name the activities in the data set  
+4. Appropriately labels the data set with descriptive variable names.  
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
 		   
 The flow of run_analysis.R is as follows:  
   - read in all the necessary data files:  
