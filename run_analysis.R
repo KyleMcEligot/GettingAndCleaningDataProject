@@ -129,6 +129,8 @@ names(mean_std_data) <-
 library(reshape2)
 long_form_data <- melt(mean_std_data, id.vars = c("subject", "activity"))
 
+## With the long form, the information is grouped by subject, activity, 
+## and variable.  The means of those groups is then calculated.
 library(dplyr)
 long_form_grouped <- group_by(long_form_data, subject, activity, variable)
 long_form_means <- summarize(long_form_grouped, mean(value))
