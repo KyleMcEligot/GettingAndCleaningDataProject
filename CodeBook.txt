@@ -30,6 +30,12 @@ The instructions for this progect are below:
 The creation of the tidy data set was done by the run_analysis.R script. See the README.md file for 
 information about running the script to produce the tidy data set from the original data.
 
+Information on tidying data came from the following two sources in addtion to the course videos and swirl:
+  - Hadley Wickham's Tidy Data paper
+        http://vita.had.co.nz/papers/tidy-data.pdf
+  - tidy data discussion thrad from course "Community TA"
+        https://class.coursera.org/getdata-015/forum/thread?thread_id=27
+
 
 Data Transformation Choices
 ===========================
@@ -46,7 +52,7 @@ The original data's file features_info.txt states:
 Thus, in step 2, the column variables that contain "mean(" and "std(" are selected.
 
 Form of data wide vs long
-------------------------
+-------------------------
 
 The original data's X_train.txt and X_test.txt files are wide data.  
 
@@ -72,9 +78,11 @@ The variables (columns) in the tidy_data2.txt file are:
                        "Sitting"
                        "Standing"
                        "Laying"
-  "variable"      - the variable being reported (see below)
+  "variable"      - the variable being reported (see below for column values)
   "mean(value)"   - the mean value of all the records in the original dataset for
-                    the subject/activity,variable
+                    the subject/activity/variable combination. 
+                    The data in the original data set (from which the means were 
+                    generated) had been normalized and bounded within [-1,1].
 
 values for "variable" column:
 ----------------------------
